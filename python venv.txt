@@ -1,0 +1,7 @@
+#Crear el entorno virtual
+$ mkdir myproject
+$ cd myproject
+$ python3 -m venv venv
+
+#activar el entorno virtual 
+.venv/bin/activate
