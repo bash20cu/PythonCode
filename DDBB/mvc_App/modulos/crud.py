@@ -1,7 +1,7 @@
 import sqlite3
 from tkinter import *
 from tkinter import messagebox
-from modulos.func import limpiarCampos
+#from modulos.func import limpiarCampos
 
 
 def CrearMvc(miID, nombre, apellidos, password, direccion, cuadroTexto):
@@ -17,7 +17,7 @@ def CrearMvc(miID, nombre, apellidos, password, direccion, cuadroTexto):
     try:
         micursor.execute("INSERT INTO DATOSUSUARIOS VALUES (NULL, ?, ?, ?, ?, ?)", DatosUsuarios)
         conn.commit()
-        limpiarCampos(miID, nombre, apellidos, password, direccion, cuadroTexto)
+        #limpiarCampos(miID, nombre, apellidos, password, direccion, cuadroTexto)
         messagebox.showinfo("Informacion", "Registro insertado con exito en la Base de datos")
     except:
         messagebox.showwarning("Aviso", "Algo salio mal")
@@ -72,7 +72,7 @@ def EliminarMvc(miID, nombre, apellidos, password, direccion, cuadroTexto):
             micursor.execute("DELETE FROM DATOSUSUARIOS WHERE ID=?", DatosUsuarios)
             conn.commit()
             messagebox.showinfo("Informacion", "Registro Eliminado con exito en la Base de datos")
-            limpiarCampos(miID, nombre, apellidos, password, direccion, cuadroTexto)
+            #limpiarCampos(miID, nombre, apellidos, password, direccion, cuadroTexto)
         except:
             messagebox.showwarning("Alerta", "Algo salio mal")
 

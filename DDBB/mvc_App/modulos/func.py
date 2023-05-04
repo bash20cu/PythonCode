@@ -11,3 +11,5 @@ def avisoLicencia():
 
 def cerrarDocumento():
     valor=messagebox.askretrycancel("Reintentar", "Imposible cerrar, intente de Nuevo")
+def limpiarCampos():
+    return

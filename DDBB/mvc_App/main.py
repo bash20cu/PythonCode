@@ -1,7 +1,7 @@
-#from tkinter import *
+from tkinter import *
 from modulos.func import *
-from modulos.conn import Conn, CrearDB
-from modulos.crud import limpiarCampos, CrearMvc, LeerMvc, ActualizarMvc, EliminarMvc
+from modulos.conn import *
+from modulos.crud import *
 #import tkinter.scrolledtext as scrolledtext
 #from mvc_App.modulos import *
 
