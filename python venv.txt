@@ -5,3 +5,6 @@ $ python3 -m venv venv
 
 #activar el entorno virtual 
 .venv/bin/activate
+
+#Jupyter notebook 
+python -m notebook
